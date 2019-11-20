@@ -15,6 +15,7 @@ echo "\e[93m Github: mr. jzy \n";
 echo "\n";
 echo "\e[96m[?] Masukkan Nomor HP Anda (62/1) : ";
 $nope = trim(fgets(STDIN));
+$nope = preg_replace("/[^0-9]/", "",$nope);
 $register = register($nope);
 if ($register == false)
     {
