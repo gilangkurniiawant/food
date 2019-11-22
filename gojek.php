@@ -11,7 +11,7 @@ echo "\e[94m          Voucher Claim Gojek           \n";
 echo "\e[91m FORMAT NOMOR HP : INDONESIA '62***' , US='1***'\n";
 echo "\e[93m SCRIPT MAKAN GRATIS PASTI KENYANG\n";
 echo "\e[93m SCRIPT : sirhuka.com\n";
-echo "\e[93m Github: mr. jzy \n";
+echo "\e[93m Ngoding itu yang bermanfaat untuk dirimu dulu :) \n";
 echo "\n";
 echo "\e[96m[?] Masukkan Nomor HP Anda (62/1) : ";
 $nope = trim(fgets(STDIN));
