@@ -9,8 +9,8 @@ include ("curl.php");
 echo "\n";
 echo "\e[94m          Voucher Claim Gojek           \n";
 echo "\e[91m FORMAT NOMOR HP : INDONESIA '62***' , US='1***'\n";
-echo "\e[93m SCRIPT GOJEK AUTO REGISTER + AUTO CLAIM VOUCHER\n";
-echo "\e[93m SCRIPT : rizwijaya\n";
+echo "\e[93m SCRIPT MAKAN GRATIS PASTI KENYANG\n";
+echo "\e[93m SCRIPT : sirhuka.com\n";
 echo "\e[93m Github: mr. jzy \n";
 echo "\n";
 echo "\e[96m[?] Masukkan Nomor HP Anda (62/1) : ";
@@ -35,21 +35,21 @@ if ($register == false)
       else
         {
         file_put_contents("token/".$verif['data']['customer']['name'].".txt", $verif['data']['access_token']);
-        echo "\e[93m[!] Trying to redeem Voucher : Makan 20k+10k !\n";
+        echo "\e[93m[!] Trying to redeem Voucher Makan 20k + 10k !\n";
         sleep(3);
         $claim = claim($verif);
         if ($claim == false)
             {
             echo "\e[92m[!]".$voucher."\n";
             sleep(3);
-            echo "\e[93m[!] Trying to redeem Voucher : Makan 10k+10k !\n";
+            echo "\e[93m[!] Trying to redeem Voucher Makan 10k+10k !\n";
             sleep(3);
             goto next;
             }
             else{
                 echo "\e[92m[+] ".$claim."\n";
                 sleep(3);
-                echo "\e[93m[!] Trying to redeem Voucher : Go Ride 10k,dsb !\n";
+                echo "\e[93m[!] Trying to redeem Voucher Ngeng-Ngeng 10k,dsb !\n";
                 sleep(3);
                 goto ride;
             }
@@ -58,7 +58,7 @@ if ($register == false)
             if ($claim == false) {
                 echo "\e[92m[!]".$claim['errors'][0]['message']."\n";
                 sleep(3);
-                echo "\e[93m[!] Trying to redeem Voucher : GOFOODBOBA19 !\n";
+                echo "\e[93m[!] Trying to redeem Voucher Makan 15k+10k !\n";
                 sleep(3);
                 goto next1;
             }
