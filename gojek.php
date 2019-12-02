@@ -49,7 +49,7 @@ if ($register == false)
             else{
                 echo "\e[92m[+] ".$claim."\n";
                 sleep(3);
-                echo "\e[93m[!] Trying to redeem Voucher Ngeng-Ngeng 10k,dsb !\n";
+                echo "\e[93m[!] Trying to redeem Voucher WADAW !\n";
                 sleep(3);
                 goto ride;
             }
@@ -65,7 +65,7 @@ if ($register == false)
             else{
                 echo "\e[92m[+] ".$claim."\n";
                 sleep(3);
-                echo "\e[93m[!] Trying to redeem Voucher : COBAINGOJEK !\n";
+                echo "\e[93m[!] Trying to redeem Voucher : WADAW !\n";
                 sleep(3);
                 goto ride;
             }
@@ -74,7 +74,7 @@ if ($register == false)
             if ($claim == false) {
                 echo "\e[92m[!]".$claim['errors'][0]['message']."\n";
                 sleep(3);
-                echo "\e[93m[!] Trying to redeem Voucher : COBAINGOJEK !\n";
+                echo "\e[93m[!] Trying to redeem Voucher : WADAW !\n";
                 sleep(3);
                 goto ride;
             }
@@ -82,7 +82,7 @@ if ($register == false)
             {
             echo "\e[92m[+] ".$claim . "\n";
             sleep(3);
-            echo "\e[93m[!] Trying to redeem Voucher : COBAINGOJEK !\n";
+            echo "\e[93m[!] Trying to redeem Voucher : WADAW !\n";
             sleep(3);
             goto ride;
             }
