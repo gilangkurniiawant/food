@@ -191,7 +191,7 @@ function claim($token)
     }
      function ride($token)
     {
-    $data = '{"promo_code":"WADAWGOJEK"}';    
+    $data = '{"promo_code":"ADAGOJEK"}';    
     $claim = request("/go-promotions/v1/promotions/enrollments", $token, $data);
     if ($claim['success'] == 1)
         {
@@ -205,7 +205,7 @@ function claim($token)
     }
      function cekvocer($token)
     {
-    $data = '{"promo_code":"ADAWGOJEK"}';    
+    $data = '{"promo_code":"ADAGOJEK"}';    
     $claim = request("/go-promotions/v1/promotions/enrollments", $token, $data);
     if ($claim['success'] == 1)
         {
@@ -219,7 +219,7 @@ function claim($token)
     }
      function pengen($token)
     {
-    $data = '{"promo_code":"JAJANPAKEGOPAY"}';    
+    $data = '{"promo_code":"COBAINGOJEK"}';    
     $claim = request("/go-promotions/v1/promotions/enrollments", $token, $data);
     if ($claim['success'] == 1)
         {
