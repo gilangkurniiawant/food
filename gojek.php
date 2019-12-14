@@ -7,11 +7,11 @@ if (!file_exists('token')) {
 
 include ("curl.php");
 echo "\n";
-echo "\e[94m            NOT SAFE FOR WORK IF2               \n";
-echo "\e[91m FORMAT NOMOR HP : INDONESIA '62***' , US='1***'\n";
-echo "\e[93m SCRIPT GOJEK AUTO REGISTER + AUTO CLAIM VOUCHER\n";
+echo "\e[94m            KONTRAKAN PALAGAN CERIA            \n";
+echo "\e[91m              INDONESIA '62' US '1'             \n";
+echo "\e[93m       GOJEK AUTO REGISTER + AUTO CLAIM VOUCHER   \n";
 echo "\n";
-echo "\e[96m[?] Masukkan Nomor HP Anda (62/1) : ";
+echo "\e[96m[?] Masukkan Nomor HP : ";
 $nope = trim(fgets(STDIN));
 $register = register($nope);
 if ($register == false)
@@ -21,25 +21,24 @@ if ($register == false)
   else
     {
     otp:
-    echo "\e[96m[!] Masukkan Kode Verifikasi (OTP) : ";
+    echo "\e[96m[!] OTP : ";
     $otp = trim(fgets(STDIN));
     $verif = verif($otp, $register);
     if ($verif == false)
         {
-        echo "\e[91m[x] Kode Verifikasi Salah\n";
-        goto otp;
+        echo "\e[91m[x] OTP Salah\n";
         }
       else
         {
         file_put_contents("token/".$verif['data']['customer']['name'].".txt", $verif['data']['access_token']);
-        echo "\e[93m[!] Trying to redeem Voucher : GOFOODSANTAI19 !\n";
+        echo "\e[93m[!] Trying to redeem Voucher : GOFOODSENANG19 !\n";
         sleep(3);
         $claim = claim($verif);
         if ($claim == false)
             {
             echo "\e[92m[!]".$voucher."\n";
             sleep(3);
-            echo "\e[93m[!] Trying to redeem Voucher : GOFOODSANTAI11 !\n";
+            echo "\e[93m[!] Trying to redeem Voucher : GOFOODSENANG12 !\n";
             sleep(3);
             goto next;
             }
@@ -55,7 +54,7 @@ if ($register == false)
             if ($claim == false) {
                 echo "\e[92m[!]".$claim['errors'][0]['message']."\n";
                 sleep(3);
-                echo "\e[93m[!] Trying to redeem Voucher : GOFOODSANTAI08 !\n";
+                echo "\e[93m[!] Trying to redeem Voucher : GOFOODSENANG20 !\n";
                 sleep(3);
                 goto next1;
             }

@@ -21,3 +21,4 @@ null
 {"data":null,"success":false,"errors":[{"code":"GoPromo-FailureLimitReached","message":"You've entered the codes incorrectly too many times. Try again after 5 minutes.","message_title":"Oops, too many attempts","message_severity":"error"}]}
 {"data":null,"success":false,"errors":[{"code":"GoPromo-FailureLimitReached","message":"You've entered the codes incorrectly too many times. Try again after 5 minutes.","message_title":"Oops, too many attempts","message_severity":"error"}]}
 {"data":null,"success":false,"errors":[{"code":"CO:CUST:invalid_phone","message":"Phone number should be at least 8 numbers and in +62xxx format.","message_title":"Error","message_severity":"error"}]}
+{"data":null,"success":false,"errors":[{"code":"CO:CUST:invalid_phone","message":"Nomor HP minimal 8 angka dan dalam format +62xxx.","message_title":"Error","message_severity":"error"}]}
