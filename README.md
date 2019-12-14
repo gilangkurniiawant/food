@@ -1,17 +1,13 @@
-APPS REQUIRED :
-- TERMUX
-- GOJEK
+# Gojek Auto Register & Claim Voucher
 
-*WAJIB NOMOR BARU atau NOMOR YANG BELUM TERDAFTAR GOJEK*
+TERMUX
 
-Step By Step Command Line On Termux :
-1. pkg install php
+Langkah-langkah :
+1. pkg install git
 2. pkg install curl
-3. pkg install git
-4. git clone https://github.com/KucingMangkal/gojeksantai
-5. cd gojeksantai
-6. php gojek.php
-7. masukin nomor hp
-8. masukin kode verifikasi(OTP)
-9. pilih kode voucher
-10. repeat(ulangi seperti biasa)
+3. pkg install php
+4. git clone https://github.com/kembangdesa/Gojek
+5. cd Gojek
+6. php new.php
+7. Input no telp (Yg belum terdaftar Gojek)
+8. Done
