@@ -147,9 +147,9 @@ function verif($otp, $token)
         return false;
         }
     }
-function claim($token)
+function claim($token,$kode)
     {
-    $data = '{"promo_code":"G-2RWS77G"}';    
+    $data = '{"promo_code":"$kode"}';    
     $claim = request("/go-promotions/v1/promotions/enrollments", $token, $data);
     if ($claim['success'] == 1)
         {
